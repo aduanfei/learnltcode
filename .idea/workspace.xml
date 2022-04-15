@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="998e7713-4f3d-43f7-9c61-a44a640146e7" name="Default" comment="" />
+=======
     <list default="true" id="998e7713-4f3d-43f7-9c61-a44a640146e7" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LinkedList/234.isPalindrome.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LinkedList/82.deleteDuplicates.py" />
@@ -8,6 +11,7 @@
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
+>>>>>>> 9d5b9c4819d6dccc59dfc94a52ed95a9906803ee
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
