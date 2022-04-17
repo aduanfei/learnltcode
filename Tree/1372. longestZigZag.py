@@ -31,7 +31,7 @@ class Solution_dp(object):
         return max(r1,r2)
 
 
-li=[1,None,1,1,1,None,None,1,1,None,1,None,None,None,1,None,1]
+li=[1,1,1,None,1,None,None,1,1,None,1]
 
 def generate_tree(l):
     root=TreeNode(l[0])
@@ -56,8 +56,36 @@ def generate_tree(l):
             node.right=TreeNode(l[i])
             stack.append(node.right)
 
+
+class Solution_dfs(object):
+    def longestZigZag(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        self.dist = 0
+        if not root:
+            return
+        nodes = [root]
+        self.dfs(root.left, 0, -1)
+        self.dfs(root.right, 0, 1)
+
+        return self.dist
+
+    def dfs(self, root, dist, dir):
+        if not root:
+            return
+        dist += 1
+        self.dist = max(self.dist, dist)
+
+        if dir == -1:
+            self.dfs(root.right, dist, dir * -1)
+            self.dfs(root.left, 0, dir)
+        else:
+            self.dfs(root.left, dist, dir * -1)
+            self.dfs(root.right, 0, dir)
 root=generate_tree(li)
-s1=Solution_dp()
+
 r=s1.longestZigZag(root)
 
 
