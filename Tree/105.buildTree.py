@@ -24,3 +24,19 @@ class Solution(object):
         root.right = self.buildTree(preorder[inrd + 1:], inorder[inrd + 1:])
 
         return root
+
+
+class Solution(object):
+    def buildTree(self, inorder, postorder):
+        if not inorder:
+            return
+        rootval = postorder[len(postorder) - 1]
+        i = inorder.index(rootval)
+
+        root = TreeNode(rootval)
+
+        # prerd=preorder.index(inorder[inrd-1])
+        root.left = self.buildTree(inorder[0:i], postorder[0:i])
+        root.right = self.buildTree(inorder[i + 1:], postorder[i:len(postorder) - 1])
+
+        return root
