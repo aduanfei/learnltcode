@@ -86,7 +86,7 @@ class Solution_dfs(object):
             self.dfs(root.right, 0, dir)
 root=generate_tree(li)
 
-r=s1.longestZigZag(root)
+
 
 
 
