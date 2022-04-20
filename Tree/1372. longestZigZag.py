@@ -55,6 +55,7 @@ def generate_tree(l):
         else:
             node.right=TreeNode(l[i])
             stack.append(node.right)
+    return root
 
 
 class Solution_dfs(object):

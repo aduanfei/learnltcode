@@ -1,3 +1,4 @@
+#单次遍历找到结果后不可直接返回，可能有多个路径满足
 class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
        self.val = val
@@ -63,5 +64,5 @@ def generate_tree(l):
 l=[1,-2,-3,1,3,-2,None,-1]
 root=generate_tree(l)
 s=Solution()
-
+sum
 print(s.pathSum(root,-1))
