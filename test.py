@@ -2,4 +2,4 @@ import collections
 
 
 
-print(17>>1)
+print(1<<2)
