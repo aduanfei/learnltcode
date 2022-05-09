@@ -1,3 +1,5 @@
+#指针数据要转换为元组，排除重复项
+
 import heapq
 import copy
 class Solution(object):
