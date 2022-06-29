@@ -1,7 +1,9 @@
+import bisect
 def test():
     l=[1,2,3]
-    for i in l:
+    print(bisect.bisect_right([],0))
 
-        print(i)
+
+
 
 test()

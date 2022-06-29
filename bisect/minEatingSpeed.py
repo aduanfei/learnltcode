@@ -8,12 +8,7 @@ class Solution(object):
         def possible(piles,h,midn):
             res=0
             for p in piles:
-                n1=p//midn
-                if p%midn==0:
-                    n2=0
-                else:
-                    n2=1
-                res+=n1+n2
+                res+= (p + midn - 1) // mid
             if res<=h:
                 return 1
             else:
